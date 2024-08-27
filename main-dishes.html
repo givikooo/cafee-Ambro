@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antique Bakery Cafe main dishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+</head>
+<body>
+    <div id="main-dishes" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-01.jpg">
+        <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle">
+                    <i class="fas fa-2x fa-bars tm-text-gold"></i>
+                </button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <li class="inline-block mb-4 mx-4">
+                        <a href="index.html" class="tm-text-gold py-1 md:py-3 px-4">Home</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4">
+                        <a href="main-dishes.html" class="tm-text-gold py-1 md:py-3 px-4">Main Dishes</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4">
+                        <a href="desserts.html" class="tm-text-gold py-1 md:py-3 px-4">Desserts</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4">
+                        <a href="drinks.html" class="tm-text-gold py-1 md:py-3 px-4">Drinks</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+        
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">ჩოფანა's Cafe</h1>
+                    <p class="tm-text-gold tm-text-2xl">your daily energy booster</p>
+                </div>                 
+            </div>
+        </div>        
+    </div>
+    <!-- Your Main Dishes content here -->
+    <div class="container mx-auto tm-container py-24 sm:py-48" data-parallax="scroll" data-image-src="img/cafee bckg.jpg">
+        <div class="text-center mb-16">
+            <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Main Dishes page</h2>
+        </div>
+        <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-orange ">
+            <div class="flex items-start mb-6 tm-menu-item">
+                <img src="img/dish-1.jpg" alt="Image" class="rounded-md">
+                <div class="ml-3 sm:ml-6">
+                    <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Salad</h3>
+                    <div class="text-white text-md descr-text-white font-light mb-1">ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients</div>
+                    <div class="text-white text-md descr-text-white font-light">L $10.50</div>
+                </div>                    
+            </div>
+            <div class="flex items-start mb-6 tm-menu-item">
+                <img src="img/dish-2.jpg" alt="Image" class="rounded-md">
+                <div class="ml-3 sm:ml-6">
+                    <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Fish</h3>
+                    <div class="text-white text-md descr-text-white font-light mb-1">ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients</div>
+                    <div class="text-white text-md descr-text-white font-light">L $12.50</div>
+                </div>                    
+            </div>
+            <div class="flex items-start mb-6 tm-menu-item">
+                <img src="img/dish-2.jpg" alt="Image" class="rounded-md">
+                <div class="ml-3 sm:ml-6">
+                    <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Khatchapuri</h3>
+                    <div class="text-white text-md descr-text-white font-light mb-1">ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients</div>
+                    <div class="text-white text-md descr-text-white font-light">L $14.75</div>
+                </div>                    
+            </div>
+            <div class="flex items-start mb-6 tm-menu-item">
+                <img src="img/dish-4.jpg" alt="Image" class="rounded-md">
+                <div class="ml-3 sm:ml-6">
+                    <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Khinkali</h3>
+                    <h3 class="text-white text-md descr-text-white font-light mb-1">ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients, ingredients</h3>
+                    <div class="text-white text-md descr-text-white font-light">Size M $11.75 . L $14.75</div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <!-- Include footer and scripts -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        function checkAndShowHideMenu() {
+            if(window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');                
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(document).ready(function(){
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function(){
+                $('#tm-nav').toggleClass('active'); // Toggle the 'active' class on the nav
+            });
+
+            $(document).click(function(event) {
+                var $target = $(event.target);
+                if(!$target.closest('#tm-nav').length && $('#tm-nav').hasClass('active')) {
+                    $('#tm-nav').removeClass('active');
+                }
+            });
+
+            $('#tm-nav ul li a').click(function(){
+                if($('#tm-nav').hasClass('active')) {
+                    $('#tm-nav').removeClass('active');
+                }
+            });
+
+            $(document).scroll(function() {
+                var distanceFromTop = $(document).scrollTop();
+
+                if(distanceFromTop > 100) {
+                    $('#tm-nav').addClass('scroll');
+                } else {
+                    $('#tm-nav').removeClass('scroll');
+                }
+            });
+
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</body>
+<style>
+    @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#tm-nav.active ul li {
+    opacity: 0; 
+    transform: translateY(-20px); 
+}
+
+#tm-nav.active ul li:nth-child(1) {
+    animation: fadeInDown 0.5s ease forwards;
+    animation-delay: 0.1s;
+}
+
+#tm-nav.active ul li:nth-child(2) {
+    animation: fadeInDown 0.5s ease forwards;
+    animation-delay: 0.2s;
+}
+
+#tm-nav.active ul li:nth-child(3) {
+    animation: fadeInDown 0.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+#tm-nav.active ul li:nth-child(4) {
+    animation: fadeInDown 0.5s ease forwards;
+    animation-delay: 0.4s;
+}
+
+</style>
+</html>
