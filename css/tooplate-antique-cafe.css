@@ -160,6 +160,13 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     width: 165px;
 }
 
+<<<<<<< HEAD
+=======
+.bold {
+    font-weight: bolder;
+}
+
+>>>>>>> 775c006 (Updated contact Form)
 #tm-nav ul{
     background-color: sienna;
 }
